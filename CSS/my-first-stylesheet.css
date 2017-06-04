@@ -1,0 +1,22 @@
+body{
+	font-family: sans-serif;
+	
+	border: 1px solid red;
+	border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+	
+    background-color: #cccccc;
+	background-image: url("http://www.psdgraphics.com/file/crumpled-paper.jpg");
+}
+h1 {
+	background-image: url("http://img.clipartall.com/free-music-clip-art-images-clipart-music-1024_461.jpg");
+    color: blue;
+    font-size: 44px;
+	text-align: center;
+
+    border: 1px solid red;
+	border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
