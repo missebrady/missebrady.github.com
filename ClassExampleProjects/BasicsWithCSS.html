@@ -1,0 +1,183 @@
+<html>
+	<head> 
+		<title>Basics</title> <!-- This page's name is "Basics" -->
+		<style>
+		/*
+			Adds a border to the table and centers the text
+		*/
+		table,th,td{
+			border: 1px solid black;
+			text-align: center;
+		}
+		/*
+			Sets items in the table heading to have a font size of 24 pixels.
+		*/
+		th{
+			font-size: 24px;
+		}
+		/*
+			Sets ordered lists to have a light green background
+		*/
+		ol{
+			background: lightgreen;
+		}
+		/*
+			Sets unordered lists to have a light blue background
+		*/		
+		ul{
+			background: lightblue;
+		}
+		/*
+			Puts padding, or extra space around all edges of images.
+		*/
+		img{
+			padding: 30px;
+		}		
+		/*
+			Centers header 1
+		*/
+		h1{
+			text-align: center;
+		}
+		/*
+			Makes all the text Arial, "Times New Roman", Helvetica, or sans depending on the computer
+		*/
+		body{
+			font-family: Arial, "Times New Roman", Helvetica, sans;
+		}
+		/*
+			Example of an ID
+			Sets items with an ID of "orange" to have an orange background
+		*/
+		#orange{
+			background:orange;
+		}
+		/*
+			An example of a class
+			Indents items with the class "emp" and sets the text color to red
+		*/
+		.emp{
+			margin-left: 20px;
+			color: red;
+		}		
+		</style>
+	</head>
+	<body>
+		<!-- Example of Header and Paragraph -->
+		<div>
+			<h1>This is a header</h1>
+			<p>This is a paragraph</p>
+			<p>There are 6 different header tags.
+			We have already seen one of the header tags</p>
+		</div>
+		
+		<!-- Example of different headers -->
+		<div>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<h6>Header 6</h6>
+		</div>
+		
+		<!-- Example of having text on different lines -->
+		<div>
+			<p>In order to have the text appear on different lines you must either:</p>
+			<p>Create a new paragraph tag, or<br>use a break tag</p>		
+			<p>Using seperate paragraph tags gives more space between the lines.</p>
+		</div>
+		
+		<!-- Typographical Emphasis --- Bold, Italics, Underline -->
+		<div class="emp">
+			<h4>In addition to being able to write text in HTML, you can also provide emphasis to the test.</h4>
+			<p>You can <b>bold</b> text by using either <strong>< b ></strong> or <strong>< strong ></strong>.</p>
+			<p>You can <i>italicize</i> text by using either <em>< i ></em> or <em>< em ></em>.</p>
+			<p>You can <u>underline</u> text by using <u>< u ></u>.</p>
+		</div>
+				
+		<!-- Example of a list -->
+		<div>
+			<h4>You can make two different types of lists in HTML.</h4>
+			<p>The first type of list is called an unordered list.</p>
+			<ul>
+				<li>An unordered list consists of one or more items.</li>
+				<li>Items in an unordered list are not order specific, meaning the order does not matter.</li>
+			</ul>
+			<p>The other type of list is called an ordered list.</p>
+			<ol>
+				<li>Similar to an unordered list, an ordered list consists of one or more items.</li>
+				<li>Items in an ordered list are in a set order</li>
+			</ol>
+		</div>
+		
+		<!-- Example of Nested Lists -->
+		<div>
+			<p>It is possible to have nested lists, or lists inside of other lists.</p>
+			<ol>
+				<li>Here is an example of a nested list
+					<ul>
+						<li>Notice that there is an outer list</li>
+						<li>And an inner list</li>
+					</ul>
+				</li>
+				<li>In this example we have:
+					<ul>
+						<li>An ordered list on the outside</li>
+						<li>And an unordered list on the inside</li>
+						<li>Nested lists do not need to be ordered lists on the outside and unordered lists on the inside.</li>
+					</ul>	
+				</li>
+				<li>In fact, we could have a nested list there was:
+					<ul>
+						<li>Made up entirely of ordered lists</li>
+						<li>Made up entirely of unordered lists</li>
+						<li>Or any combination of the two</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		
+		<!-- Example of an image -->
+		<div>
+			<h4>You can include images in your HTML file.</h4>
+			<p>There are two main ways to include an image.</p>
+			<ol>
+				<li>The first way is to use a link to the picture.<br>
+				<img src="http://www.lib.utexas.edu/maps/world_maps/world_pol97.jpg" alt="world" width="400"></li>
+				<li>The second way is to download the image and use the path of the image.<br>
+				<img src="world.jpg" alt="world" width="400"></li>
+			</ol>
+		</div>
+		
+		<!-- Example of a link -->
+		<div>
+			<h4>You can include links in your HTML file.</h4>
+			<p>Similar to the images, there is two different ways you can do this.</p>
+			<ol>
+				<li>The first way is to use a URL to link the the page. <a href="http://www.lib.utexas.edu/maps/world_maps/world_pol97.jpg">Link to website for the picture above.</a></li>
+				<li>The second way is to use the path of the page you are trying to link to. <a href="HelloWorld.html">Link to Hello World Page.</a> </li>
+			</ol>
+		</div>
+		
+		<!-- Example of table --> <!--- SHOW CSS STYLING UP ABOVE --->
+		<div>
+			<h4>You can make tables in HTML</h4>
+			<table width=40%>
+				<tr> <!-- Table Row -->
+					<!-- Table Heading -->
+					<th>Name</th> 
+					<th>Favorite Color</th>
+				</tr>
+				<tr>
+					<!-- Items in the Table -->
+					<td>James</td> 
+					<td style="background:blue">Blue</td>
+				</tr>
+				<tr>
+					<td>Jill</td>
+					<td id="orange">Orange</td>				
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
