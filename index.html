@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                background-color: linen;
-            }
-            p {
-                color: maroon;
-                margin-left: 40px;
-            } 
-            img {
-                display: block;
-                margin: auto;
-                width: 40%;
-            }
-        </style>
-        <title>Index</title>
-        <link type = "text/css" rel = "stylesheet" href = "CSS/my-first-stylesheet.css"/>
-    </head>
-    <body>
-        <marquee>
-            <h1> Computer Science Language Exploration</h1>
-        </marquee>
-        <p> Click one of the following links: </p>
-        <ul>
-            <li>My Example Projects
-                <ul>
-                    <li><a href = "ClassExampleProjects/index.html">Example Projects</a></li>
-                    <li><a href = "Example/index.html">Styles Conference Example</a></li>  
-                </ul>
-            </li>
-            <li>Student Projects:
-                <ul>
-                    <li>
-                        <ul> Fall 2017                        
-                            <li><a href = "Fall2017pd1/home.html">Fall 2017 Period 1</a> </li>                         
-                            <li><a href = "Fall2017pd2/home.html">Fall 2017 Period 2</a> </li>  
-                        </ul>
-                    </li>
-                    <li>
-                        <ul> Fall 2019
-                            <li><a href = "Fall2019OddDays/Home.html">Fall 2019 Odd Days</a> </li>
-                            <li><a href = "Fall2019EvenDays/Home.html">Fall 2019 Even Days</a> </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </body>
+  <head>
+    <style>
+      body {
+				font-family: Verdana;
+				background: #8F1298;
+				color: #FFE34C;
+				text-align: center;
+			}
+      img {
+        display: block;
+        margin: auto;
+        width: 40%;
+				background: #FFE34C;
+      }
+			a{
+				color: #FFE34C;
+			}
+			h1 {
+				font-size: 44px;
+				text-align: center;				
+			}
+			table,th,td{
+				text-align: center;
+				border: 3px solid #FFE34C;
+				margin-left:auto;
+				margin-right:auto;
+				padding: 15px;
+				font-size: 20px;
+			}
+			th{
+				font-size: 30px;
+			}
+			#mine{
+				padding: 5px;
+				font-size: 15px;
+			}
+			.mine{
+				margin-top: 20px;
+			}
+    </style>
+    <title>Index</title>
+  </head>
+  <body >
+		<img src = "https://tinyurl.com/y3ynge66" alt ="Ephrata Logo">
+    <h1> Miss Brady's CS Language Exploration</h1>
+		<table>
+			<tr>
+				<th colspan = "2">Student Projects:</th>
+			</tr>
+			<tr>
+				<td> 
+					<h3>Fall 2017</h3>
+					<a href = "Fall2017pd1/home.html">Fall 2017 Period 1</a> <br>
+					<a href = "Fall2017pd2/home.html">Fall 2017 Period 2</a> 
+				</td>
+				<td> 
+					<h3>Fall 2019</h3>
+					<a href = "Fall2019OddDays/Home.html">Fall 2019 Odd Days</a> <br>
+					<a href = "Fall2019EvenDays/Home.html">Fall 2019 Even Days</a> 
+				</td>
+			</tr>				
+		</table>
+		<table ID = "mine" class="mine">
+			<tr><th ID = "mine">
+			Miss Brady's Example Projects
+			</th></tr>
+			<tr ><td>
+			<a href = "ClassExampleProjects/index.html" ID="mine">Example Projects</a><br>
+			<a href = "Example/index.html" ID="mine">Styles Conference Example</a> 
+			</td></tr>
+		</table>		
+  </body>
 </html>
