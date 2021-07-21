@@ -1,0 +1,82 @@
+<html>
+	<head>
+    <title>HP Page</title>
+    <style>
+      body {
+        width: 100%;
+        border: 1px solid gray;
+      }
+      header, footer {
+        padding: 1em;
+        color: white;
+        background-color: black;
+        clear: left;
+        text-align: center;
+      }
+      nav {
+        float: left;
+        max-width: 160px;
+        margin: 0;
+        padding: 1em;
+      }
+      ul {
+        list-style-type: none;
+        padding: 10px;
+      }   
+      ol{
+        padding:10px;
+        color:blue;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      a:hover {
+        color: lightblue;
+      }
+      article {
+        margin-left: 170px;
+        border-left: 1px solid gray;
+        padding: 1em;
+        overflow: hidden;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>A lot of things</h1>
+      </header>  
+      <nav> 
+        <ul>
+          <li><a href="Index.html"><b>Home</b></a></li>
+          <li><a href="thing1.html"><b>Thing 1</b></a>
+            <ul>
+              <li><a href="thing1.html#part1">Thing 1 part 1</a></li>
+            </ul>
+          </li>
+          <li><a href="thing2.html"><b>Thing 2</b></a>
+            <ol>
+              <li><a href="thing2.html#part1">Thing 2: Part 1</a></li>
+            </ol>						
+          </li>
+          <li><a href="thing3.html"><b>Thing 3</b></a>
+            <ul>
+              <li><a href="thing3.html#part3">Thing 3: Part 1</a></li>
+            </ul>						
+          </li>	
+      </nav>
+      <article>
+				<h1>My Page Info</h1>
+				<p>This is the information</p>
+      </article>
+      <footer>Copyright &copy; 
+        <a href="Index.html"><b>Home</b></a>
+        <a href="thing1.html"><b>thing 1</b></a>
+        <a href="thing2.html"><b>thing 2</b></a>
+        <a href="thing3.html"><b>thing 3</b></a>			
+      </footer>
+    </div>
+  </body>
+</html>
